@@ -1,1 +1,1 @@
-lesson on c programming
+lessons on C programming
