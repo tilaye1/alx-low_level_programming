@@ -21,6 +21,6 @@ int main(void)
 	else if ((n % 10) == 0)
 		printf("0\n");
 	else
-		printf("les than 6 and not 0\n");
+		printf("less than 6 and not 0\n");
 	return (0);
 }
