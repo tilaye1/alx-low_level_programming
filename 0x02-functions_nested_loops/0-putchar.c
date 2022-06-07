@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry pprint to Print _putchar followed by newline
- * Return : 0 on success
+ * main- Entry print to Print _putchar followed by newline
+ * Return: Always 0
  */
 int main(void)
 {
