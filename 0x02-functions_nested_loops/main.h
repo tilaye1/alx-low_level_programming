@@ -1,5 +1,5 @@
 #ifndef _MAIN_H
-#define _MAINN_
+#define _MAIN_
 
 /**
  * _putchar: write to stdout
