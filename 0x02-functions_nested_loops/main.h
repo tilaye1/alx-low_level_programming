@@ -51,7 +51,11 @@ int print_sign(int n);
 int _abs(int);
 
 
-
+/**
+ * print_last_digit - print last digit
+ * Return: last digit
+ */
+int print_last_digit(int n);
 
 
 
