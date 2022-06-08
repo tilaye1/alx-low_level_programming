@@ -20,7 +20,35 @@ void print_alphabet();
  */
 void print_alphabet_x10();
 
+/**
+ * _islower - checks for lower
+ * @c -entered character to check
+ * Return: int
+ */
 
+int _islower(int c);
+
+/**
+ * _isalpha - check for alphabet character
+ * @c: character to check
+ * Return: 1 if uper or lower
+ */
+
+int _isalpha(int c);
+
+/**
+ * print_sign - sign of a number
+ * @n: number to check
+ * Return: ->0<+
+ */
+int print_sign(int n);
+
+/**
+ * _abs -absolute value
+ * @int: integre
+ * Return: number
+ */
+int _abs(int);
 
 
 
