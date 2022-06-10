@@ -12,15 +12,15 @@ void print_number(int n)
 		_putchar('0');
 	else
 	{
-		if(n < 0)
+		if (n < 0)
 		{
 			positive = n * -1;
 			_putchar('-');
 		}
-		while (t_beg < positive)
-		
+		while (t_beg <= positive)
+
 			t_beg *= 10;
-		
+
 		tens = t_beg / 10;
 
 		while (tens >= 1)
@@ -32,6 +32,3 @@ void print_number(int n)
 		}
 	}
 }
-
-
-		
