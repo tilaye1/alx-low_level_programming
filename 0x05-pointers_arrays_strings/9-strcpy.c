@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * _strcpy - copy a string with null byte
  * @dest: a place where to put
  * @src: a string to be copied
@@ -8,7 +8,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	for(i = 0; i <= _strlen(src); i++)
+	for (i = 0; i <= _strlen(src); i++)
 		dest[i] = src[i];
 	return (dest);
 }
