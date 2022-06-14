@@ -22,7 +22,7 @@ int _strlen(char *s)
  * @str: string
  */
 
-void half_string(char *str)
+void puts_half(char *str)
 {
 	int idx;
 	int len = _strlen(str);
