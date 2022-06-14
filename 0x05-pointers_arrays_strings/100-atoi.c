@@ -72,7 +72,7 @@ int _atoi(char *s)
 
 	if (index_start < 0)
 		return (0);
-	sign  = find_sign(s);
+	sign  = check_sign(s);
 	while ((s[index_start] >= '0' && s[index_start] <= '9') 
 			&& (index_start <= _strlen(s)))
 	{
@@ -92,7 +92,7 @@ int _atoi(char *s)
 		digit += (s[i] - '0') * t;
 		t /= 10;
 	}
-	return (num * sign);
+	return (digit * sign);
 }
 
 
