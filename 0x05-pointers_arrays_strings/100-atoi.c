@@ -1,98 +1,30 @@
 #include "main.h"
 
 /**
- * _strlen - check string length
- * @s: string
- * Return: return value
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
-
-/**
- * index_starting - copy a string with null byte
- * @s: a place where to put
- * @src: string
- * Return: return index
-*/
-int index_starting(char *s)
-{
-	int i;
-
-	for (i = 0; i <= _strlen(s); i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			return (i);
-	}
-	return (-1);
-}
-/**
- * check_sign - check wether it is neg or pos
- * @s: string
- * Return: return neg or pos
- */
-int check_sign(char *s)
-{
-	int neg = 0;
-	int i = 0;
-	int sign  =  1;
-
-	while (i < (index_starting(s)))
-	{
-		if (s[i++] == '-')
-			neg++;
-	}
-	if (neg % 2 != 0)
-		sign = -1;
-	return (sign);
-}
-
-/**
- * _atoi - convert string to an int
- * @s:string to be converted
- * Return: integer value
+ * _atoi - concert string to ine
+ * @s: pointer
+ * Return: value
  */
 int _atoi(char *s)
 {
-	int index_start = (index_starting(s));
-	int sign;
-	int num_print = 0;
-	int t = 1, i;
-	unsigned int digit = 0;
-	int dig = (index_start(s));
+	int i;
+	int dig  = 0;
+	int sign  = -1;
+	int brk = 0;
 
-
-	if (index_start < 0)
-		return (0);
-	sign  = check_sign(s);
-	while ((s[index_start] >= '0' && s[index_start] <= '9') 
-			&& (index_start <= _strlen(s)))
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		num_print += 1;
-		index_start++;
+		if (s[i] == '-')
+			sign = sign * -1;
+		if (s[i] > '0' && s[i] < '9')
+		{
+			dig = dig * 10;
+			dig -= (s[0] - '0');
+			brk = 1;
+		}
+		else if (brk == 1)
+			break;
 	}
-
-	i = 1;
-	while (i < num_print)
-	{
-		t *= 10;
-		i++;
-	}
-
-	for (i = dig; i < (dig + num_print); i++)
-	{
-		digit += (s[i] - '0') * t;
-		t /= 10;
-	}
-	return (digit * sign);
+		dig = sign * dig;
+		return (dig);
 }
-
-
