@@ -20,7 +20,6 @@ int _strlen(char *s)
 /**
  * index_starting - copy a string with null byte
  * @s: a place where to put
- * @src: string
  * Return: return index
 */
 int index_starting(char *s)
@@ -73,7 +72,7 @@ int _atoi(char *s)
 	if (index_start < 0)
 		return (0);
 	sign  = check_sign(s);
-	while ((s[index_start] >= '0' && s[index_start] <= '9') 
+	while ((s[index_start] >= '0' && s[index_start] <= '9')
 			&& (index_start <= _strlen(s)))
 	{
 		num_print += 1;
