@@ -27,7 +27,7 @@ int index_starting(char *s)
 {
 	int i;
 
-	for (i = 0; i <= _strlen(src); i++)
+	for (i = 0; i <= _strlen(s); i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
@@ -62,7 +62,7 @@ int check_sign(char *s)
  */
 int _atoi(char *s)
 {
-	int index_start = index_starting(s);
+	int index_start = (index_starting(s));
 	int sign;
 	int num_print = 0;
 	int t = 1, i;
@@ -73,7 +73,7 @@ int _atoi(char *s)
 	if (index_start < 0)
 		return (0);
 	sign  = find_sign(s);
-	while ((s[index_start] >= '0' && s[indext_start] <= '9') 
+	while ((s[index_start] >= '0' && s[index_start] <= '9') 
 			&& (index_start <= _strlen(s)))
 	{
 		num_print += 1;
