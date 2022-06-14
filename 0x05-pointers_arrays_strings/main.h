@@ -44,5 +44,39 @@ void _puts(char *str);
  * @s: string
  */
 void print_rev(char *s);
+
+/**
+ * rev_string - reverse a given string
+ * @s: string
+ */
+void rev_string(char *c);
+
+/**
+ * _puts2 - print every second character from  a given string
+ * @str:string
+ */
+void _puts2(char *str);
+
+/*puts_half - half of a given string
+ * @str: string
+ */
+void puts_half(char *str);
+
+/**
+ * print _array - print n element of array
+ * @a: array value
+ * @n:element
+ */
+void print_array(int *a, int *n);
+
+/**
+ * _strcpy - copies a given string to pointed destination
+ * @dest: copy to this buffer
+ * @src: source
+ */
+char *_strcpy(char *dest, char *src);
+
+/**
+ *
 int _atoi(char *s);
 #endif
