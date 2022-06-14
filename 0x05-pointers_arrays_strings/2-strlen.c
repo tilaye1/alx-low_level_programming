@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen - check sring length
+ * _strlen - check string length
  * @s: string
- * @Return: retunn value
+ * Return: return value
  */
 int _strlen(char *s)
 {
