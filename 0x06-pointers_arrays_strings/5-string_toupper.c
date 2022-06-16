@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *  * string_toupper - capitalize all letters
- *   * @s: string to manipulate
- *    * Return: return  capitalized
- *     */
+ * string_toupper - capitalize all letters
+ * @s: string to manipulate
+ * Return: return  capitalized
+ */
 
 char *string_toupper(char *s)
 {
