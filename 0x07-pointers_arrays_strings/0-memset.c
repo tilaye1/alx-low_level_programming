@@ -4,21 +4,21 @@
  * _memset - fill n bytes of memory
  * @s: pointer to memory area
  * @b: constant value
- * @n: noof bytes to fill
+ * @n: no of bytes to fill
  * Return: memory area
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 
-	int size = n; /* only accept positive sizes */
+	int size = n;
 
 	if (size > 0)
 	{
-		int i;
+		int j;
 
-		for (i = 0; i < size; i++)
-			s[i] = b;
+		for (j = 0; j < size; j++)
+			s[j] = b;
 	}
 
 	return (s);
