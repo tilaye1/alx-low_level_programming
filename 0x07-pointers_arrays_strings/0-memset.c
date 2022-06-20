@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * _memset - fill n bytes of memory
+ * _memset - fill n bytes of memory with a constant value
  * @s: pointer to memory area
  * @b: constant value
- * @n: no of bytes to fill
+ * @n: number of bytes to fill
  * Return: memory area
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 
-	int size = n;
+	int size = n; /* only accept positive sizes */
 
 	if (size > 0)
 	{
-		int j;
+		int i;
 
-		for (j = 0; j < size; j++)
-			s[j] = b;
+		for (i = 0; i < size; i++)
+			s[i] = b;
 	}
 
 	return (s);
