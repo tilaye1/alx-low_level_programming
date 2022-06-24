@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strcpy - copy a string with null byte
  * @dest: a place where to put

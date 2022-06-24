@@ -1,7 +1,8 @@
 #include "main.h"
 
+
 /**
- * _isdigit - check digit func
+ * _isdigit - wether is digit or not
  * @c: checked character
  * Return: 1 if true
  */

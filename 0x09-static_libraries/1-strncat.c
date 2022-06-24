@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * _strncat - merge n bytes to destination string
  * @dest: string to be appended

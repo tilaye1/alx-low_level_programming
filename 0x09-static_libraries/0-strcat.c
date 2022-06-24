@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * _strcat - merge strings
  * @dest: string to be appended

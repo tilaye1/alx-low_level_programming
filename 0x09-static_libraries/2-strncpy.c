@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - copies n bytes of a source into buffer of a destination string,
+ * _strncpy - copies n bytes of a source into buffer of a dest string,
  * @dest: copy to this buffer
  * @src: source to copy
  * @n: n bytes to be copied
