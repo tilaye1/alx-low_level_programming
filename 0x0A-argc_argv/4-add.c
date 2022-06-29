@@ -1,29 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
 /**
  * main - adds positive numbers.
- * @argc: number of arguments
- * @argv: array of pointers
- * Return: Error, 1 - If one number contains symbols that are not digits,
- *	0 - If no number is passed to the program.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
+
 int main(int argc, char *argv[])
 {
-	int n, d, sum = 0;
 
-	for (n = 1; n < argc; n++)
+
+	for (int i = 1; i < argc; i++)
 	{
-		for (d = 0; argv[n][d]; d++)
+		for (int j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[n][d] < '0' || argv[n][d] > '9')
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-
-		sum += atoi(argv[n]);
+		int add += atoi(argv[i]);
 	}
-	printf("%d\n", sum)
-
-	return (0)
+	printf("%d\n", add);
+	return (0);
 }
